@@ -8,7 +8,7 @@ public class SimpleStartup {
 
   public String checkYourself(int guess) {
     String result = "miss";
-    for (int cell : locationCells) {
+    for (int cell : locationCells) { // accessing instance variable locationCells
       if (guess == cell) { // BUG: Ignore previously made guesses
         result = "hit";
         numOfHits++;
